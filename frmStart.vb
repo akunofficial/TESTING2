@@ -5,7 +5,7 @@ Imports Guna.UI2.WinForms
 Imports MySql.Data.MySqlClient
 Imports System.Data.Sql
 Imports System.IO
-
+' nambah komen 1
 Public Class frmStart
     Private Sub frmStart_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AcceptButton = btnLogin
