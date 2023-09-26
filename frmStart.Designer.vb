@@ -23,7 +23,7 @@ Partial Class frmStart
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation3 As Guna.UI2.AnimatorNS.Animation = New Guna.UI2.AnimatorNS.Animation()
+        Dim Animation1 As Guna.UI2.AnimatorNS.Animation = New Guna.UI2.AnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmStart))
         Me.pnlClose = New Guna.UI2.WinForms.Guna2Panel()
         Me.lblAppName = New System.Windows.Forms.Label()
@@ -35,12 +35,14 @@ Partial Class frmStart
         Me.Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(Me.components)
         Me.Guna2Transition1 = New Guna.UI2.WinForms.Guna2Transition()
         Me.pnRegister = New Guna.UI2.WinForms.Guna2ShadowPanel()
+        Me.txtRegUsername = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txtRegPassword = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txtRegEmail = New Guna.UI2.WinForms.Guna2TextBox()
         Me.btnCreateAccount = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.btnBackLogin = New Guna.UI2.WinForms.Guna2Button()
         Me.lblCreateNewAccount = New System.Windows.Forms.Label()
         Me.pnLogin = New Guna.UI2.WinForms.Guna2ShadowPanel()
+        Me.txtLogUsername = New Guna.UI2.WinForms.Guna2TextBox()
         Me.lblinkForgetMe = New System.Windows.Forms.LinkLabel()
         Me.lblRememberMe = New System.Windows.Forms.Label()
         Me.tglswtchRememberMe = New Guna.UI2.WinForms.Guna2ToggleSwitch()
@@ -50,8 +52,6 @@ Partial Class frmStart
         Me.lblLoginContinue = New System.Windows.Forms.Label()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.pcFrmStart1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.txtLogUsername = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.txtRegUsername = New Guna.UI2.WinForms.Guna2TextBox()
         Me.pnlClose.SuspendLayout()
         Me.pnRegister.SuspendLayout()
         Me.pnLogin.SuspendLayout()
@@ -82,7 +82,7 @@ Partial Class frmStart
         Me.lblAppName.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAppName.Location = New System.Drawing.Point(12, 9)
         Me.lblAppName.Name = "lblAppName"
-        Me.lblAppName.Size = New System.Drawing.Size(150, 31)
+        Me.lblAppName.Size = New System.Drawing.Size(179, 38)
         Me.lblAppName.TabIndex = 4
         Me.lblAppName.Text = "Application 3"
         '
@@ -135,7 +135,7 @@ Partial Class frmStart
         Me.lblCompanyName.ForeColor = System.Drawing.Color.Black
         Me.lblCompanyName.Location = New System.Drawing.Point(90, 110)
         Me.lblCompanyName.Name = "lblCompanyName"
-        Me.lblCompanyName.Size = New System.Drawing.Size(178, 31)
+        Me.lblCompanyName.Size = New System.Drawing.Size(207, 37)
         Me.lblCompanyName.TabIndex = 4
         Me.lblCompanyName.Text = "Eltran Indonesia"
         '
@@ -147,9 +147,9 @@ Partial Class frmStart
         Me.Guna2Transition1.SetDecoration(Me.lblWelcomeApplication, Guna.UI2.AnimatorNS.DecorationType.None)
         Me.lblWelcomeApplication.Font = New System.Drawing.Font("Segoe UI Semibold", 19.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWelcomeApplication.ForeColor = System.Drawing.SystemColors.MenuHighlight
-        Me.lblWelcomeApplication.Location = New System.Drawing.Point(792, 165)
+        Me.lblWelcomeApplication.Location = New System.Drawing.Point(714, 158)
         Me.lblWelcomeApplication.Name = "lblWelcomeApplication"
-        Me.lblWelcomeApplication.Size = New System.Drawing.Size(378, 45)
+        Me.lblWelcomeApplication.Size = New System.Drawing.Size(460, 52)
         Me.lblWelcomeApplication.TabIndex = 6
         Me.lblWelcomeApplication.Text = "Welcome to Application!"
         Me.lblWelcomeApplication.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -164,22 +164,22 @@ Partial Class frmStart
         'Guna2Transition1
         '
         Me.Guna2Transition1.Cursor = Nothing
-        Animation3.AnimateOnlyDifferences = True
-        Animation3.BlindCoeff = CType(resources.GetObject("Animation3.BlindCoeff"), System.Drawing.PointF)
-        Animation3.LeafCoeff = 0!
-        Animation3.MaxTime = 1.0!
-        Animation3.MinTime = 0!
-        Animation3.MosaicCoeff = CType(resources.GetObject("Animation3.MosaicCoeff"), System.Drawing.PointF)
-        Animation3.MosaicShift = CType(resources.GetObject("Animation3.MosaicShift"), System.Drawing.PointF)
-        Animation3.MosaicSize = 0
-        Animation3.Padding = New System.Windows.Forms.Padding(0)
-        Animation3.RotateCoeff = 0!
-        Animation3.RotateLimit = 0!
-        Animation3.ScaleCoeff = CType(resources.GetObject("Animation3.ScaleCoeff"), System.Drawing.PointF)
-        Animation3.SlideCoeff = CType(resources.GetObject("Animation3.SlideCoeff"), System.Drawing.PointF)
-        Animation3.TimeCoeff = 0!
-        Animation3.TransparencyCoeff = 0!
-        Me.Guna2Transition1.DefaultAnimation = Animation3
+        Animation1.AnimateOnlyDifferences = True
+        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
+        Animation1.LeafCoeff = 0!
+        Animation1.MaxTime = 1.0!
+        Animation1.MinTime = 0!
+        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
+        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
+        Animation1.MosaicSize = 0
+        Animation1.Padding = New System.Windows.Forms.Padding(0)
+        Animation1.RotateCoeff = 0!
+        Animation1.RotateLimit = 0!
+        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
+        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
+        Animation1.TimeCoeff = 0!
+        Animation1.TransparencyCoeff = 0!
+        Me.Guna2Transition1.DefaultAnimation = Animation1
         '
         'pnRegister
         '
@@ -202,6 +202,34 @@ Partial Class frmStart
         Me.pnRegister.ShadowShift = 4
         Me.pnRegister.Size = New System.Drawing.Size(327, 350)
         Me.pnRegister.TabIndex = 7
+        '
+        'txtRegUsername
+        '
+        Me.txtRegUsername.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtRegUsername.BorderColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtRegUsername.BorderRadius = 8
+        Me.txtRegUsername.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2Transition1.SetDecoration(Me.txtRegUsername, Guna.UI2.AnimatorNS.DecorationType.None)
+        Me.txtRegUsername.DefaultText = ""
+        Me.txtRegUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txtRegUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txtRegUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtRegUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtRegUsername.FillColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtRegUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtRegUsername.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtRegUsername.ForeColor = System.Drawing.Color.Black
+        Me.txtRegUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtRegUsername.IconLeft = Global.Application3.My.Resources.Resources.icons8_user_48__1_
+        Me.txtRegUsername.Location = New System.Drawing.Point(49, 109)
+        Me.txtRegUsername.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtRegUsername.Name = "txtRegUsername"
+        Me.txtRegUsername.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtRegUsername.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.txtRegUsername.PlaceholderText = "Username"
+        Me.txtRegUsername.SelectedText = ""
+        Me.txtRegUsername.Size = New System.Drawing.Size(229, 39)
+        Me.txtRegUsername.TabIndex = 22
         '
         'txtRegPassword
         '
@@ -311,7 +339,7 @@ Partial Class frmStart
         Me.lblCreateNewAccount.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCreateNewAccount.Location = New System.Drawing.Point(111, 23)
         Me.lblCreateNewAccount.Name = "lblCreateNewAccount"
-        Me.lblCreateNewAccount.Size = New System.Drawing.Size(117, 25)
+        Me.lblCreateNewAccount.Size = New System.Drawing.Size(145, 30)
         Me.lblCreateNewAccount.TabIndex = 0
         Me.lblCreateNewAccount.Text = "Register Here"
         '
@@ -339,6 +367,34 @@ Partial Class frmStart
         Me.pnLogin.Size = New System.Drawing.Size(327, 350)
         Me.pnLogin.TabIndex = 17
         '
+        'txtLogUsername
+        '
+        Me.txtLogUsername.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtLogUsername.BorderColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtLogUsername.BorderRadius = 8
+        Me.txtLogUsername.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2Transition1.SetDecoration(Me.txtLogUsername, Guna.UI2.AnimatorNS.DecorationType.None)
+        Me.txtLogUsername.DefaultText = ""
+        Me.txtLogUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txtLogUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txtLogUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtLogUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtLogUsername.FillColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtLogUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtLogUsername.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtLogUsername.ForeColor = System.Drawing.Color.Black
+        Me.txtLogUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtLogUsername.IconLeft = Global.Application3.My.Resources.Resources.icons8_user_48__1_
+        Me.txtLogUsername.Location = New System.Drawing.Point(49, 62)
+        Me.txtLogUsername.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtLogUsername.Name = "txtLogUsername"
+        Me.txtLogUsername.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtLogUsername.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.txtLogUsername.PlaceholderText = "Username"
+        Me.txtLogUsername.SelectedText = ""
+        Me.txtLogUsername.Size = New System.Drawing.Size(229, 39)
+        Me.txtLogUsername.TabIndex = 21
+        '
         'lblinkForgetMe
         '
         Me.lblinkForgetMe.AutoSize = True
@@ -347,7 +403,7 @@ Partial Class frmStart
         Me.lblinkForgetMe.Font = New System.Drawing.Font("Segoe UI", 7.28!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblinkForgetMe.Location = New System.Drawing.Point(212, 176)
         Me.lblinkForgetMe.Name = "lblinkForgetMe"
-        Me.lblinkForgetMe.Size = New System.Drawing.Size(69, 17)
+        Me.lblinkForgetMe.Size = New System.Drawing.Size(77, 20)
         Me.lblinkForgetMe.TabIndex = 20
         Me.lblinkForgetMe.TabStop = True
         Me.lblinkForgetMe.Text = "Forget Me"
@@ -360,7 +416,7 @@ Partial Class frmStart
         Me.lblRememberMe.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRememberMe.Location = New System.Drawing.Point(82, 178)
         Me.lblRememberMe.Name = "lblRememberMe"
-        Me.lblRememberMe.Size = New System.Drawing.Size(95, 17)
+        Me.lblRememberMe.Size = New System.Drawing.Size(113, 21)
         Me.lblRememberMe.TabIndex = 19
         Me.lblRememberMe.Text = "Remember Me"
         '
@@ -460,7 +516,7 @@ Partial Class frmStart
         Me.lblLoginContinue.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLoginContinue.Location = New System.Drawing.Point(92, 23)
         Me.lblLoginContinue.Name = "lblLoginContinue"
-        Me.lblLoginContinue.Size = New System.Drawing.Size(154, 25)
+        Me.lblLoginContinue.Size = New System.Drawing.Size(185, 30)
         Me.lblLoginContinue.TabIndex = 0
         Me.lblLoginContinue.Text = "Login to Continue"
         '
@@ -493,65 +549,9 @@ Partial Class frmStart
         Me.pcFrmStart1.TabStop = False
         Me.pcFrmStart1.UseTransparentBackground = True
         '
-        'txtLogUsername
-        '
-        Me.txtLogUsername.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtLogUsername.BorderColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtLogUsername.BorderRadius = 8
-        Me.txtLogUsername.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2Transition1.SetDecoration(Me.txtLogUsername, Guna.UI2.AnimatorNS.DecorationType.None)
-        Me.txtLogUsername.DefaultText = ""
-        Me.txtLogUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txtLogUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txtLogUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txtLogUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txtLogUsername.FillColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtLogUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtLogUsername.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.txtLogUsername.ForeColor = System.Drawing.Color.Black
-        Me.txtLogUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtLogUsername.IconLeft = Global.Application3.My.Resources.Resources.icons8_user_48__1_
-        Me.txtLogUsername.Location = New System.Drawing.Point(49, 62)
-        Me.txtLogUsername.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.txtLogUsername.Name = "txtLogUsername"
-        Me.txtLogUsername.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtLogUsername.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.txtLogUsername.PlaceholderText = "Username"
-        Me.txtLogUsername.SelectedText = ""
-        Me.txtLogUsername.Size = New System.Drawing.Size(229, 39)
-        Me.txtLogUsername.TabIndex = 21
-        '
-        'txtRegUsername
-        '
-        Me.txtRegUsername.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtRegUsername.BorderColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtRegUsername.BorderRadius = 8
-        Me.txtRegUsername.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2Transition1.SetDecoration(Me.txtRegUsername, Guna.UI2.AnimatorNS.DecorationType.None)
-        Me.txtRegUsername.DefaultText = ""
-        Me.txtRegUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txtRegUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txtRegUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txtRegUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txtRegUsername.FillColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtRegUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtRegUsername.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.txtRegUsername.ForeColor = System.Drawing.Color.Black
-        Me.txtRegUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtRegUsername.IconLeft = Global.Application3.My.Resources.Resources.icons8_user_48__1_
-        Me.txtRegUsername.Location = New System.Drawing.Point(49, 109)
-        Me.txtRegUsername.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.txtRegUsername.Name = "txtRegUsername"
-        Me.txtRegUsername.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtRegUsername.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.txtRegUsername.PlaceholderText = "Username"
-        Me.txtRegUsername.SelectedText = ""
-        Me.txtRegUsername.Size = New System.Drawing.Size(229, 39)
-        Me.txtRegUsername.TabIndex = 22
-        '
         'frmStart
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1186, 727)
