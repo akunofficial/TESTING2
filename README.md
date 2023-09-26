@@ -2,6 +2,9 @@
 saya dari akun arif
 apakah masuk yg ini?
 AKUN: masuk
+
+OK
+
 Database yang digunakan = MySQL
 
 Sebelum menjalankan aplikasi, berikut beberapa hal yang harus dilakukan terlebih dahulu :
